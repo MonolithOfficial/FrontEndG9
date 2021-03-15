@@ -1,0 +1,38 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("../images/papyrus.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    padding-top: 3rem;
+    max-width: 1000px;
+    display: block;
+    margin: auto;
+    background-color: white;
+    border-right: 3px solid green;
+    border-left: 3px solid green;
+    height: 100vh;
+}
+
+.menu h2 {
+    margin-left: 2px;
+    margin-top: 0;
+}
+
+.menu ul {
+    list-style: circle;
+}
+
+.menu ul li {
+    line-height: 3rem;
+}
+
+.menu ul li a {
+    font-size: 18px;
+}

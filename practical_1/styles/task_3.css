@@ -1,0 +1,30 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("../images/mountainz.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+p {
+    font-weight: 500;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.3);
+    max-width: 1100px;
+    display: block;
+    margin: auto;
+}
+
+.info h3 {
+    text-align: center;
+}
+
+.regions {
+    list-style: circle;
+}
+
