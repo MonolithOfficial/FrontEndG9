@@ -1,0 +1,12 @@
+.mainSection {
+    max-width: 500px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.mainSection h1 {
+    text-align: right;
+    color: red;
+}

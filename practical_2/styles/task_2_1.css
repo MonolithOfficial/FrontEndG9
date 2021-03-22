@@ -1,0 +1,40 @@
+.mainSection {
+    max-width: 550px;
+    padding: 10px 10px 10px 10px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+#dotted {
+    border: 5px dotted cyan;    
+}
+#dashed {
+    border: 5px dashed cyan;    
+}
+#solid {
+    border: 5px solid cyan;    
+}
+#double {
+    border: 5px double cyan;    
+}
+#groove {
+    border: 5px groove cyan;    
+}
+#ridge {
+    border: 5px ridge cyan;    
+}
+#inset {
+    border: 5px inset cyan;    
+}
+#outset {
+    border: 5px outset cyan;    
+}
+#hidden {
+    border: 5px hidden cyan;    
+}
+#mix {
+    border-style: dotted dashed solid double;
+    /* border: 5px cyan; */
+    border-color: cyan;
+    border-width: 5px;
+}

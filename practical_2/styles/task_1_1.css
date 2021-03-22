@@ -1,0 +1,15 @@
+.paragraphs {
+    display: block;
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#oblique {
+    font-style: oblique;
+}
+
+p {
+    margin-left: 3px;
+}

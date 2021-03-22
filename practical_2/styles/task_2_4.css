@@ -1,0 +1,25 @@
+.mainSection {
+    max-width: 450px;
+    padding: 10px 10px 30px 10px;
+    margin: auto;
+    border: 3px double black;
+}
+
+.shape {
+    width: 150px;
+    height: 100px;
+    background-color: rgb(107, 29, 29);
+    position: relative;
+}
+
+.el1 {
+    border-radius: 50px/15px;
+}
+
+.el2 {
+    border-radius: 15px/50px;
+}
+
+.el3 {
+    border-radius: 50%;
+}
