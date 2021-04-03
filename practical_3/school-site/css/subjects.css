@@ -1,0 +1,47 @@
+::selection {
+    color: black;
+    background: yellow;
+  }
+
+body {
+    background: url("../images/bg.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.mainPage {
+    width: 50%;
+    margin: auto;
+    color: white;
+    margin-top: 3rem;
+    border: 20px solid yellow;
+    text-align: center;
+}
+
+
+.mainPage h1 {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+a {
+    width: 30%;
+    display: block;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 30px;
+    cursor: pointer;
+    background: none;
+    font-size: 35px;
+    border: 1px solid yellow;
+    transition: 0.2s;
+    text-align: center;
+    text-decoration: none;
+    color: yellow;
+}
+
+a:hover {
+    background-color: yellow;
+    color: black;
+}
