@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>დავალება 2, პრაქტიკული 3</title>
+    <style>
+        p{
+            text-align: center;
+        }
+
+        table {
+            border: solid 1px black;
+            height: 350px;
+            width: 600px;
+            margin: auto;
+        }
+
+        tbody td, tfoot td, thead th{
+            border: solid 1px black;
+        }
+        
+        tfoot td {
+            height: 30px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <p>Table Data</p>
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Count</th>
+            <th>Weight</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Apple</td>
+                <td>3 Count</td>
+                <td>23 T</td>
+            </tr>
+            <tr>
+                <td>Apple</td>
+                <td>3 Count</td>
+                <td>23 T</td>
+            </tr>
+            <tr>
+                <td colspan="2">1</td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>დავალება 4, პრაქტიკული 3</title>
+    <style>
+        #mainBody, #header, #menu, #content, #tableFooter, .menuItem {
+            border: solid 1px black;
+            box-sizing: border-box;
+            margin: 2px;
+        }
+        #header {
+            width: calc(100% - 4px);
+            height: 7%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #header p {
+            text-align: center;
+            font-size: 40px;
+            cursor: pointer;
+        }
+        #mainBody {
+            padding: 2px;
+            display: flex;
+            flex-direction: column;
+            width: 800px;
+            height: fit-content;
+            margin: auto;
+        }
+        #innerBody {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        #innerMostBody {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+        }
+        #menu {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        #content {
+            flex-grow: 3;
+        }
+        .menuItem {
+            width: calc(100% - 4px);
+            padding: 3px;
+        }
+        .contentDesc {
+            width: 90%;
+            margin: auto;
+        }
+        .contentDesc .imgHolder, .title {
+            text-align: center;
+        }
+        .contentDesc .imgHolder img {
+            border: 3px solid red;
+            width: 345px;
+            height: 260px;
+            overflow: hidden;
+        }
+        #content .paragraphHolder {
+            width: 90%;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="mainBody">
+        <div id="header">
+            <p onclick="geoFront()">დარკრუმის გეოფრონტი</p>
+        </div>
+        <div id="innerBody">
+            <div id="innerMostBody">
+                <div id="menu">
+                    <a id="cd" class="menuItem" href="#" onclick="cDogma()">ცენტრალური დოგმა</a>
+                    <a id="nl" class="menuItem" href="#" onclick="nilkoris()">ნილკორისი</a>
+                    <a id="bl" class="menuItem" href="#" onclick="balasar()">ბალასარი</a>
+                    <a id="mn" class="menuItem" href="#" onclick="monolith()">მონოლითი</a>
+                    <a id="ge" class="menuItem" href="#" onclick="georgeus()">გეორგიუსი</a>
+                </div>
+                <div id="content">
+                    <div class="contentDesc cd">
+                        <h3 class="title">გეოფრონტი</h3>
+                        <div class="imgHolder">
+                            <img class="thumb" src="./task_images/geofront.jpg" alt="DGF" srcset="">
+                        </div>
+                        <div class="paragraphHolder">
+                            <p class="paragraph">
+                                გეოფრონტი არის ორგანიზაცია დარკრუმის შტაბ-ბინა. ის მოიცავს როგორც ცენტრალურ, ისე შინაგან დოგმას. არის თუ არა დარკრუმის სხვა პერიფერიები, ანუ ძრავა-სისტემები განლაგებული ამავე ლოკაციაზე, უცნობია. ვარაუდობენ, რომ მთელი ორგანიზაციის ენერგომომარაგების წყარო გამომდინარეობს ტრმინალურ დოგმაში მყოფი ერთი იდუმალი ობიექტიდან, რომელსაც 'შავი ზღვის ბილინგვა' ეწოდება. ცნობილია, რომ დარკრუმის ორგანიზაციას განაგებს 10 პირი, რომელთა ვინაობა დადგენილი არ არის. ათივე შემადგენელ წევრს გააჩნია საკუთარი სახელობის ძრავა-სისტემა, რომელთაგან გამოკვლეულია მხოლოდ 5.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tableFooter">
+                <p style="margin-left: 10px;"><strong>დარკრუმის გეოფრონტი<strong></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const cd = document.getElementById('cd');
+        const nl = document.getElementById('nl');
+        const bl = document.getElementById('bl');
+        const mn = document.getElementById('mn');
+        const ge = document.getElementById('ge');
+        const td = document.getElementById('td');
+
+        const title = document.getElementsByClassName("title");
+        const img = document.getElementsByClassName("thumb");
+        const paragraph = document.getElementsByClassName("paragraph");
+
+        const geoFront = () => {
+            title[0].innerText = "გეოფრონტი";
+            img[0].src = "./task_images/geofront.jpg";
+            paragraph[0].innerText = "გეოფრონტი არის ორგანიზაცია დარკრუმის შტაბ-ბინა. ის მოიცავს როგორც ცენტრალურ, ისე შინაგან დოგმას. არის თუ არა დარკრუმის სხვა პერიფერიები, ანუ ძრავა-სისტემები განლაგებული ამავე ლოკაციაზე, უცნობია. ვარაუდობენ, რომ მთელი ორგანიზაციის ენერგომომარაგების წყარო გამომდინარეობს ტრმინალურ დოგმაში მყოფი ერთი იდუმალი ობიექტიდან, რომელსაც 'შავი ზღვის ბილინგვა' ეწოდება. ცნობილია, რომ დარკრუმის ორგანიზაციას განაგებს 10 პირი, რომელთა ვინაობა დადგენილი არ არის. ათივე შემადგენელ წევრს გააჩნია საკუთარი სახელობის ძრავა-სისტემა, რომელთაგან გამოკვლეულია მხოლოდ 5."; 
+        }
+
+        const cDogma = () => {
+            title[0].innerText = "ცენტრალური დოგმა";
+            img[0].src = "./task_images/Dogma_Central1.jpg";
+            paragraph[0].innerText = "ცენტრალური დოგმა არის დარკრუმის გული, უმთავრესი ადმინისტრაციული ორგანო და პერიფერიების გადაკვეთის წერტილი, რაც ნიშნავს იმას, რომ ორგანიზაციის ყველა განშტოების ფაილურ სისტემათა გაერთიანება ქმნის ცენტრალური დოგმის პერიფერიულ მოდულს, რომელიც განთავსებულია დეცენტრალიზებულ სერვერთა გარკვეულ რაოდენობაზე. \n ცენტრალური დოგმის პროცესორი დაკონფიგურებულია DarkOS-ის ტექსტურ ვერსიაზე და მასთან უშუალო კომუნიკაცია შეუძლია მხოლოდ ამავე სისტემით აღჭურვილ მანქანას.";                    
+        }
+
+        const nilkoris = () => {
+            title[0].innerText = "ნილკორისი";
+            img[0].src = "./task_images/nilkoris.png";
+            paragraph[0].innerText = `
+                ნილკორისი, დარკრუმის ტვინი, მთავარი ღრმა მანქანური სწავლების პერიფერია. აქ წარმოიქმნება დარკრუმის სხვა განშტოებების მიერ მოხმარებული ინფორმაციის თითქმის აბსოლუტური უმრავლესობა. შეიძლება ითქვას, რომ ნილკორისი არის დარკრუმის მწიგნობარი, ცოდნის შემომტანი. როდესაც ორგანიზაციის რომელიმე პროგრამა მოითხოვს რაიმე საკითხის შესახებ ამომწურავ, ანალიტიკურად დალაგებულ ანგარიშს, მართვა გადაეცემა ნილკორისს.
+            `;
+        }
+
+        const monolith = () => {
+            title[0].innerText = "მონოლითი";
+            img[0].src = "./task_images/monolith.png";
+            paragraph[0].innerText = `
+                მონოლითი არის დარკრუმის კუნთოვანი სისტემა. მას მართვა გადაეცემა, როდესაც საჭიროა სუფთა გამოთვლითი და ტექნიკური ძალის თავმოყრა. მაგალითი მონოლითის გამოყენებისა არის კიბერშეტევაზე კონტრ-პასუხი, ანუ ფართომასშტაბიანი ბრუტალური იერიში შეტევის წყაროს სერვერებზე. კიდევ ერთი მაგალითი მონოლითის ფუნქციონალისა არის სხვა პერიფერიის ქმედებების გაძლიერება მისის შემადგენელი პროცესების აჩქარება.
+            `;
+        }
+
+        const balasar = () => {
+            title[0].innerText = "ბალასარი";
+            img[0].src = "./task_images/balasar.jpg";
+            paragraph[0].innerText = `
+                ბალასარი, დარკრუმის ნერვული სისტემა. ის განაგებს ინფორმაციის ნაკადების გადამისამართებასა და მარშრუტიზაციას. მასთან კავშირში შედის დარკრუმის ყოველი განშტოება, რათა ინფორმაცია გადავიდეს წყაროდან ადრესატამდე სწორი ფორმატით. ბალასარის ერთ-ერთი მთავარი ფუნქციონალია დარკრუმის სპეციალიზებულ ქსელში უცხო კავშირების აღმოჩენა და მათზე რეაქციის სახით შესაბამისი პერიფერიების მიმართულებით განგაშის გაგზავნა.
+            `;
+        }
+
+        const georgeus = () => {
+            title[0].innerText = "გეორგიუსი";
+            img[0].src = "./task_images/georgeus.jpg";
+            paragraph[0].innerText = `
+                გეორგიუსი, დარკრუმის თვალი. ის არის ერთგვარი ზღვარი გარე სამყაროსა და დარკრუმს შორის. ყველა სისტემა, რომლიც გარედან უნდა დაუკავშირდეს დარკრუმის ინფრასტრუქტურას, ეკონტაქტება გეორგიუსის პროგრამულ ინტერფეისს. ბალასართან ტანდემში, გეორგიუსი ქმნის ორგანიზაციის ფოლადის ფარს. თუ შეიქმნა მდგომარეობა, რომ დარკრუმი ვერ იგერიებს კიბერშეტავეას და მისი სერვერები დაცემისა და გაცემის ზღვარზეა, გეორგიუსი გამოიყენებს საკუთარ უნიკალურ პრივილეგიას - ორგანიზაციის ყველა მნიშვნელოვან სერვერს გადაწერს გასაიდუმლოებულ ლოკაციებზე, მწობრიდან გამოიყვანს მათ აპარატურას და განიცდის თვითგანაგურებას.
+            `;
+        }
+
+    </script>
+</body>
+</html>
