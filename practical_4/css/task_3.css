@@ -1,0 +1,136 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer {
+    width: 1050px;
+    height: 500px;
+    margin: auto;
+    border: 2px solid black;
+    background-color: silver;
+    position: relative;
+}
+
+.img {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+}
+
+.imgOne {
+    top: 0;
+    left: 0;
+    background-image: url("../images/1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.imgTwo {
+    top: 0;
+    right: 0;
+    background-image: url("../images/2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.imgThree {
+    bottom: 0;
+    left: 0;
+    background-image: url("../images/3.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.imgFour {
+    bottom: 0;
+    right: 0;
+    background-image: url("../images/4.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.centerImages {
+    height: 100%;
+    width: calc(100% - 550px);
+    margin: auto;
+    position: relative;
+    display: flex;
+    gap: 1rem;
+}
+
+.centerImagesLeft {
+    flex: 1;
+}
+
+.centerImagesRight {
+    flex: 1;
+}
+
+.cmg {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+
+.cmgOne {
+    top: 20px;
+    left: 0;
+    background-image: url("../images/1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.cmgTwo {
+    top: 75px;
+    left: 30px;
+    background-image: url("../images/2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.cmgThree {
+    top: 130px;
+    left: 60px;
+    background-image: url("../images/3.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.cmgFour {
+    top: 185px;
+    left: 90px;
+    background-image: url("../images/4.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+.cmgFive {
+    top: 20px;
+    right: 0;
+    background-image: url("../images/4.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.cmgSix {
+    top: 75px;
+    right: 30px;
+    background-image: url("../images/3.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.cmgSeven {
+    top: 130px;
+    right: 60px;
+    background-image: url("../images/2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.cmgEight {
+    top: 185px;
+    right: 90px;
+    background-image: url("../images/1.jpg");
+    background-position: center;
+    background-size: cover;
+}

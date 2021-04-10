@@ -1,0 +1,31 @@
+.mainTable {
+    border: 1px solid black;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+}
+
+.mainTable td {
+    border: 1px solid black;
+}
+
+.horizontal {
+    background-color: cyan;
+}
+
+.vertical {
+    background-color: bisque;
+}
+
+.center_1 {
+    background-color: red;
+}
+.center_2 {
+    background-color: blue;
+}
+.center_3 {
+    background-color: green;
+}
+.center_4 {
+    background-color: yellow;
+}
