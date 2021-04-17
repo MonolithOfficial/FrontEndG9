@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/task_3.css">
+    <title>დავალება 3, პრაქტიკული 5</title>
+</head>
+<body>
+    <div class="mainBody">
+        <form action="" id="mainForm">
+            <div class="topSection">
+                <div class="inputs">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Phone">
+                    <textarea cols="20" rows="10" placeholder="Special notes, concerns, or requirements"></textarea>
+                </div>
+                <div class="boxes">
+                    <div class="questionControl">
+                        <p class="question">What is the best way to reach you?</p>
+                        <input type="radio" id="phone" name="contact" value="phone">
+                        <label for="phone">Phone</label><br>
+                        <input type="radio" id="email" name="contact" value="email">
+                        <label for="email">Email</label><br>
+                    </div>
+                    <div class="questionControl">
+                        <p class="question">Days of week you are available for<br>appointment:</p>
+                        <input type="checkbox" id="monday" name="monday" value="monday">
+                        <label for="monday">Monday</label><br>
+                        <input type="checkbox" id="tuesday" name="tuesday" value="tuesday">
+                        <label for="tuesday">Tuesday</label><br>
+                        <input type="checkbox" id="monday" name="wednesday" value="wednesday">
+                        <label for="wednesday">Wednesday</label><br>
+                        <input type="checkbox" id="thursday" name="thursday" value="thursday">
+                        <label for="thursday">Thursday</label><br>
+                        <input type="checkbox" id="friday" name="friday" value="friday">
+                        <label for="friday">Friday</label><br>
+                    </div>
+                    <div class="questionControl">
+                        <p class="question">Best time of day for your appointment:</p>
+                        <input type="checkbox" id="morning" name="morning" value="morning">
+                        <label for="morning">Morning</label><br>
+                        <input type="checkbox" id="afternoon" name="afternoon" value="afternoon">
+                        <label for="afternoon">Afternoon</label><br>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="bottomSection">
+                <input type="submit" id="submit" value="Request My Appointment">
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>

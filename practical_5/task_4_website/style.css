@@ -1,0 +1,141 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    background: black;
+}
+#mainBody, #header, #menu, #content, #tableFooter, .menuItem {
+    border: solid 1px yellow;
+    box-sizing: border-box;
+    margin: 2px;
+    color: yellow;
+}
+a {
+    color: yellow;
+}
+#header {
+    width: calc(100% - 4px);
+    min-height: 125px;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('./images/webwp.jpg');
+    background-position: center;
+    background-size: cover;
+}
+#header p {
+    text-align: center;
+    font-size: 40px;
+    cursor: pointer;
+}
+.horizontalMenu {
+    margin: 2px;
+    width: calc(100% - 4px);
+    height: 10vh;
+    min-height: 45px;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+.horizontalMenu a {
+    border: 1px solid yellow;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.horizontalMenu a:hover {
+    background-color: yellow;
+    color: black;
+}
+#mainBody {
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    /* height: 100vh; */
+    min-height: 619px;
+    max-height: fit-content;
+    margin: auto;
+}
+#innerBody {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+#innerMostBody {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+#menu {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#menu a {
+    transition: 0.5s;
+}
+#menu a:hover {
+    background-color: yellow;
+    color: black;
+}
+#content {
+    flex-grow: 3;
+    min-height: 520px;
+}
+.menuItem {
+    width: calc(100% - 4px);
+    padding: 3px;
+}
+.contentDesc {
+    width: 90%;
+    margin: auto;
+    color: yellow;
+}
+.title {
+    color: yellow;
+}
+.contentDesc .imgHolder, .title {
+    text-align: center;
+}
+.contentDesc .imgHolder img {
+    border: 3px solid yellow;
+    width: fit-content;
+    height: fit-content;
+    max-width: 345px;
+    max-height: 260px;
+    overflow: hidden;
+}
+#content .paragraphHolder {
+    width: 90%;
+    margin: auto;
+}
+
+
+
+
+.inputControl {
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+
+#submitReg, #submitLog, #submitCon {
+    margin: 10px;
+}
+
+.radio {
+    display: flex;
+    flex-direction: column;
+}
+.radioControl {
+    display: flex;
+    flex-direction: row;
+}
+
+.prompt {
+    margin: 5px;
+}

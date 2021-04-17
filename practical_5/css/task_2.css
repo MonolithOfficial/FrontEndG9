@@ -1,0 +1,64 @@
+body {
+    color: rgb(64, 89, 122);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mainPage {
+    width: 60%;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.arrows {
+    margin-left: auto;
+}
+
+.arrows a {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#mainform {
+    display: flex;
+    flex-direction: column;
+}
+
+.formControl {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.formControl label {
+    flex-grow: 1;
+    width: 80px;
+    text-align: end;
+    align-self: center;
+}
+
+.formControl input, .formControl textarea {
+    flex-grow: 10;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(64, 89, 122, 0.4);
+    transition: 0.4s;
+}
+
+.formControl input {
+    padding: 10px;
+}
+
+.formControl input::placeholder {
+    font-size: 15px;
+}
+
+.formControl input:focus, .formControl textarea:focus {
+    border-bottom: 1px solid rgba(64, 89, 122);
+}

@@ -1,0 +1,54 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form {
+    width: 400px;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    /* justify-content: space-around; */
+    background-color: rgb(228, 226, 226);
+}
+
+.username, .password {
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    width: 70%;
+    outline: none;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+}
+
+.username::placeholder, .password::placeholder {
+    font-size: 18x;
+}
+
+#submit {
+    width: calc(70% + 40px);
+    background-color: rgb(214, 95, 52);
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+form h1 {
+    text-align: center;
+    font-weight: 400;
+    color: rgb(1, 52, 94);
+}
+
+form a {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    font-size: 13px;
+    color: rgb(86, 190, 255);
+}

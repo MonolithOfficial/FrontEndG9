@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>რეგისტრაცია</title>
+</head>
+<body>
+    <div id="mainBody">
+        <div id="header" onclick="webTech()">
+        </div>
+        <div class="horizontalMenu">
+                <a href="../task_4_website.html">მთავარი</a>
+                <a href="#">რეგისტრაცია</a>
+                <a href="./login.html">ავტორიზაცია</a>
+                <a href="./contact.html">კონტაქტი</a>
+        </div>
+        <div id="innerBody">
+            <div id="innerMostBody">
+                <div id="menu">
+                    <a id="cd" class="menuItem" href="../task_4_website.html" onclick="react()">React.js</a>
+                    <a id="nl" class="menuItem" href="../task_4_website.html" onclick="angular()">Angular.js</a>
+                    <a id="bl" class="menuItem" href="../task_4_website.html" onclick="django()">Django</a>
+                    <a id="mn" class="menuItem" href="../task_4_website.html" onclick="nodejs()">Node.js</a>
+                    <a id="ge" class="menuItem" href="../task_4_website.html" onclick="sqlite()">SQLite</a>
+                </div>
+                <div id="content">
+                    <form action="" id="mainform">
+                        <div class="inputControl">
+                            <input type="email" id="email" name="email">
+                            <label for="email">ელექტრონული ფოსტა</label>
+                        </div>
+                        <div class="inputControl">
+                            <input type="email" id="emailV" name="emailV">
+                            <label for="emailV">დაადასტურეთ ელექტრონული ფოსტა</label>
+                        </div>
+                        <div class="inputControl lessened">
+                            <input type="password" id="password" name="password">
+                            <label for="password">პაროლი</label>
+                        </div>
+                        <div class="inputControl lessened">
+                            <input type="password" id="passV" name="passV">
+                            <label for="passV">გაიმეორეთ პაროლი</label>
+                        </div>
+                        <div class="inputControl">
+                            <input type="radio" id="female" name="gender">
+                            <label for="female">მდედრობითი</label>
+                            <input type="radio" id="male" name="gender">
+                            <label for="male">მამრობითი</label>
+                        </div>
+                        <div class="inputControl">
+                            <select name="level" id="level">
+                                <option value="pro">პროფესიონალი</option>
+                                <option value="intermediate">მოყვარული</option>
+                                <option value="beginner">დამწყები</option>
+                                <option value="diletant">დილეტანტი</option>
+                            </select>
+                            <label for="level">დონე</label>
+                        </div>
+                        <div class="inputControl radio">
+                            <p class="prompt"><strong>ინტერესის სფერო:</strong></p>
+                            <div class="radioControl">
+                                <input type="checkbox" id="react" name="react">
+                                <label for="react">React.js</label>
+                            </div>
+                            <div class="radioControl">
+                                <input type="checkbox" id="angular" name="angular">
+                                <label for="angular">Angular.js</label>
+                            </div>
+                            <div class="radioControl">
+                                <input type="checkbox" id="django" name="django">
+                                <label for="django">Django</label>
+                            </div>
+                            <div class="radioControl">
+                                <input type="checkbox" id="node" name="node">
+                                <label for="node">Node.js</label>
+                            </div>
+                            <div class="radioControl">
+                                <input type="checkbox" id="sqlite" name="sqlite">
+                                <label for="sqlite">SQLite</label>
+                            </div>
+                        </div>
+                        <input id="submitReg" type="submit" value="რეგისტრაცია">
+                    </form>
+                </div>
+            </div>
+            <div id="tableFooter">
+                <p style="margin-left: 10px;"><strong>ყველა უფლება დაცულია, დარკრუმის ლაბორატორია 2018-2021<strong></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../script.js">
+        
+
+    </script>
+</body>
+</html>
