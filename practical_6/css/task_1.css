@@ -1,0 +1,62 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+h3 {
+    margin: 0;
+}
+#header {
+    height: 15vh;
+    background-color: rgb(71, 168, 248);
+}
+#mainBody {
+    height: 70vh;
+}
+footer {
+    height: 15vh;
+    background-color: rgb(47, 95, 228);
+}
+.flexBoxContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: calc(100% - 10px);
+    width: 705px;
+    margin: auto;
+    padding: 5px;
+}
+.top, .bot {
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+}
+.top {
+    flex: 3;
+}
+.bot {
+    flex: 2;
+}
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainContent {
+    flex: 3;
+    background-color: green;
+}
+.sideBar {
+    flex: 1;
+    background-color: purple;
+}
+.twin {
+    flex: 1;
+    background-color: orange;
+}
+#header, footer {
+    display: flex;
+    align-items: center;
+}
+

@@ -1,0 +1,69 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.red {
+    background-color: rgb(228, 186, 186);
+}
+.green {
+    background-color: rgb(189, 223, 189);
+}
+.blue {
+    background-color: rgb(151, 136, 204);
+}
+.mainHolder {
+    width: 600px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 10px solid black;
+    margin: auto;
+}
+.flexItem {
+    display: flex;
+    height: 70px;
+    position: relative;
+    background-color: grey;
+}
+.overlay {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexItem > div {
+    box-sizing: border-box;
+    border: 1px solid grey;
+}
+
+.flexItem > div:nth-child(2){
+    width: 120px;
+}
+.flexItem > div:nth-child(3){
+    width: 90px;
+}
+.flexItem > div:nth-child(4){
+    width: 200px;
+}
+.start {
+    justify-content: flex-start;
+}
+.end {
+    justify-content: flex-end;
+}
+.center {
+    justify-content: center;
+}
+.sBetween {
+    justify-content: space-between;
+}
+.sAround {
+    justify-content: space-around;
+}

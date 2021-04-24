@@ -1,0 +1,30 @@
+.mainHolder {
+    margin: auto;
+    height: 700px;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.mainHolder > .flexRow {
+    flex: 1;
+}
+
+.flexRow {
+    gap: 3px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+.flexRow > div {
+    flex: 1;
+    background-color: rgb(68, 93, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    border-radius: 5px;
+}

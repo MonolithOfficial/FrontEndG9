@@ -1,0 +1,97 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+#pageHolder {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.green {
+    background-color: rgb(92, 156, 92);
+}
+.orange {
+    background-color: rgb(255, 102, 0);
+}
+.purple {
+    background-color: rgb(133, 51, 133);
+}
+.blue {
+    background-color: rgb(76, 113, 214);
+}
+.box {
+    border-radius: 10px;
+}
+.mainFlexHolder {
+    gap: 5px;
+    width: 600px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    flex: row;
+}
+.left, .right {
+    flex: 1;
+    display: flex;
+    gap: 5px;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+}
+.leftTop {
+    flex: 4;
+}
+.leftMid {
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.leftMid > div:nth-child(1){
+    flex: 1;
+}
+.leftBot {
+    flex: 2;
+}
+.leftMidInset{
+    gap: 5px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.leftMidInset > div:nth-child(1) {
+    flex: 1;
+}
+.leftMidInset > div:nth-child(2) {
+    flex: 2;
+}
+
+.right {
+    flex-direction: column;
+}
+.rightTop {
+    flex: 4;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.rightTop > div:nth-child(1){
+    flex: 1;
+}
+.rightTopInset {
+    gap: 5px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.rightTopInset > div:nth-child(1){
+    flex: 1;
+}
+.rightTopInset > div:nth-child(2){
+    flex: 4;
+}
+.rightBot {
+    flex: 2;
+}
+
